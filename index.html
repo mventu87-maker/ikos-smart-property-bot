@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>IKOS Smart Property Bot – Información instantánea por referencia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="IKOS Smart Property Bot ofrece información instantánea de tus inmuebles por referencia: precio, fotos, características y disponibilidad en segundos." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Contenedor general -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <header class="w-full border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-xl bg-sky-500 flex items-center justify-center font-bold text-slate-900">
+            IK
+          </div>
+          <div>
+            <p class="font-semibold tracking-tight">IKOS Smart Property Bot</p>
+            <p class="text-xs text-slate-400">Información instantánea por referencia</p>
+          </div>
+        </div>
+        <a href="mailto:info@midominio.es" class="hidden sm:inline-flex text-sm px-4 py-2 rounded-full border border-sky-400 text-sky-300 hover:bg-sky-500 hover:text-slate-900 transition">
+          Escríbenos: info@midominio.es
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main class="flex-1">
+      <section class="relative overflow-hidden">
+        <!-- Imagen de fondo -->
+        <div class="absolute inset-0">
+          <img src="hero.jpg" alt="Agente inmobiliario atendiendo a un cliente con vistas al mar" class="w-full h-full object-cover object-center opacity-40">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-950/80 to-sky-900/60"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="inline-flex items-center text-xs font-semibold tracking-wide uppercase text-sky-300 bg-sky-500/10 border border-sky-400/40 px-3 py-1 rounded-full mb-4">
+              Nuevo · Prototipo IA para inmobiliarias
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+              Información de tu piso
+              <span class="block text-sky-400">en segundos, solo con la referencia.</span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-200/90 max-w-xl mb-6">
+              IKOS Smart Property Bot responde de forma automática a tus clientes cuando te envían la referencia
+              de un inmueble: precio, fotos, características y disponibilidad en un único mensaje claro y directo.
+            </p>
+            <ul class="space-y-2 text-sm sm:text-base text-slate-200 mb-8">
+              <li class="flex gap-2">
+                <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">✓</span>
+                <span>Reduce las horas respondiendo WhatsApps repetitivos.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">✓</span>
+                <span>Mejora la experiencia del cliente con respuestas 24/7.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">✓</span>
+                <span>Prototipo ligero que puedes probar sin tocar tu ERP.</span>
+              </li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="#demo" class="inline-flex justify-center items-center px-6 py-3 rounded-full bg-sky-500 text-slate-950 font-semibold text-sm sm:text-base hover:bg-sky-400 transition shadow-lg shadow-sky-500/30">
+                Ver cómo funciona el prototipo
+              </a>
+              <a href="mailto:info@midominio.es" class="inline-flex justify-center items-center px-6 py-3 rounded-full border border-slate-500 text-sm sm:text-base text-slate-100 hover:bg-slate-800/60 transition">
+                Contacto: info@midominio.es
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel lateral demo corta -->
+          <div class="bg-slate-900/80 border border-slate-700/70 rounded-3xl p-6 sm:p-7 shadow-2xl shadow-sky-900/40 backdrop-blur">
+            <h2 class="text-lg font-semibold mb-3">Ejemplo de conversación</h2>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-end">
+                <div class="max-w-[80%] bg-sky-500 text-slate-950 rounded-2xl rounded-br-sm px-4 py-2">
+                  Hola, ¿me puedes dar info de la ref. <strong>1826</strong>?
+                </div>
+              </div>
+              <div class="flex justify-start">
+                <div class="max-w-[85%] bg-slate-800 rounded-2xl rounded-bl-sm px-4 py-3">
+                  <p class="font-semibold text-sky-300 mb-1">IKOS Smart Property Bot</p>
+                  <p class="mb-1 text-slate-100">Referencia <strong>1826</strong> – Apartamento 2 dormitorios en Coma-Ruga.</p>
+                  <ul class="list-disc list-inside text-slate-200 text-xs space-y-0.5 mb-2">
+                    <li>Precio: 185.000 €</li>
+                    <li>77 m² construidos · 2 habitaciones · 1 baño</li>
+                    <li>A 5 minutos andando de la playa</li>
+                    <li>Terraza y aire acondicionado tipo split</li>
+                  </ul>
+                  <p class="text-xs text-slate-300">Disponibilidad: <span class="text-emerald-300 font-medium">Disponible para visita esta semana</span>.</p>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 border-t border-slate-700 pt-3">
+                Toda esta información se genera automáticamente a partir de tus datos de inmuebles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: Cómo funciona -->
+      <section id="demo" class="bg-slate-950 py-14 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="mb-8 max-w-3xl">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">¿Cómo funciona el prototipo más simple?</h2>
+            <p class="text-slate-300 text-sm sm:text-base">
+              El objetivo de esta primera versión es validar la idea con usuarios reales, usando una estructura muy
+              ligera: una pequeña base de datos, ChatGPT como motor de IA y una landing publicada en GitHub Pages.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-4 gap-5 text-sm">
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Paso 1</p>
+              <h3 class="font-semibold mb-2">El cliente envía la referencia</h3>
+              <p class="text-slate-300">
+                El usuario escribe la referencia del inmueble (por ejemplo, <strong>1826</strong>) desde la web o desde un
+                canal como WhatsApp.
+              </p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Paso 2</p>
+              <h3 class="font-semibold mb-2">Búsqueda en la base de datos</h3>
+              <p class="text-slate-300">
+                El sistema busca esa referencia en un archivo sencillo (CSV o JSON) con los datos del inmueble:
+                precio, metros, fotos y estado.
+              </p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Paso 3</p>
+              <h3 class="font-semibold mb-2">Generación de respuesta con IA</h3>
+              <p class="text-slate-300">
+                ChatGPT transforma los datos en un mensaje claro y estructurado que cualquier cliente pueda entender
+                en segundos.
+              </p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-4">
+              <p class="text-xs uppercase tracking-wide text-slate-400 mb-1">Paso 4</p>
+              <h3 class="font-semibold mb-2">Envío instantáneo al usuario</h3>
+              <p class="text-slate-300">
+                La ficha completa se muestra en la web o se envía como mensaje, reduciendo al mínimo la intervención
+                manual del agente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: Beneficios -->
+      <section class="bg-gradient-to-b from-slate-950 to-slate-900 py-16 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold mb-3">Beneficios para tus clientes</h2>
+              <p class="text-slate-300 text-sm sm:text-base mb-5">
+                Los usuarios que buscan vivienda valoran la rapidez, la claridad y las imágenes. Este prototipo está
+                diseñado para resolver exactamente los pains detectados en la fase de análisis.
+              </p>
+              <ul class="space-y-3 text-sm sm:text-base text-slate-200">
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-xs">✓</span>
+                  <span><strong>Inmediatez:</strong> dejan de esperar horas a que el agente tenga un hueco.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-xs">✓</span>
+                  <span><strong>Transparencia:</strong> ven precio, características y disponibilidad en un solo mensaje.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center text-xs">✓</span>
+                  <span><strong>Más control:</strong> pueden decidir rápidamente si ese piso encaja o prefieren ver opciones similares.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6">
+              <h3 class="text-xl font-semibold mb-3">Beneficios para la inmobiliaria</h3>
+              <ul class="space-y-3 text-sm sm:text-base text-slate-200">
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">★</span>
+                  <span><strong>Menos trabajo repetitivo:</strong> el bot responde a todas las preguntas básicas por ti.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">★</span>
+                  <span><strong>Mejor imagen de marca:</strong> experiencia tecnológica y profesional sin aumentar el equipo.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">★</span>
+                  <span><strong>Datos reales:</strong> puedes medir qué referencias se consultan más y qué información falta.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-5 w-5 rounded-full bg-sky-500/20 text-sky-300 flex items-center justify-center text-xs">★</span>
+                  <span><strong>Escalable:</strong> el mismo sistema se puede conectar en el futuro con tu ERP o tu CRM.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: Casos de uso / User Personas -->
+      <section class="bg-slate-950 py-16 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-2">¿Para quién es este bot?</h2>
+            <p class="text-slate-300 text-sm sm:text-base">
+              El prototipo nace a partir de la investigación con distintos perfiles de usuarios reales.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 text-sm">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-5">
+              <h3 class="font-semibold text-lg mb-1">Laura · 32 años · Mudanza urgente</h3>
+              <p class="text-slate-300 mb-2">
+                Necesita piso en menos de 30 días. No puede esperar horas a que respondan a cada referencia que envía.
+              </p>
+              <p class="text-slate-400">
+                Con el bot, escribe “1826” y obtiene al instante toda la información del piso. Si está reservado, el
+                sistema le sugiere alternativas similares.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-5">
+              <h3 class="font-semibold text-lg mb-1">Javier · 45 años · Comprador metódico</h3>
+              <p class="text-slate-300 mb-2">
+                Compara muchas opciones antes de tomar una decisión. Quiere fichas claras, comparables y descargables.
+              </p>
+              <p class="text-slate-400">
+                El bot le devuelve una ficha técnica completa que puede guardar o imprimir, reduciendo visitas
+                innecesarias y correos de ida y vuelta.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-5">
+              <h3 class="font-semibold text-lg mb-1">Nuria · 27 años · Perfil visual</h3>
+              <p class="text-slate-300 mb-2">
+                Antes de leer nada, quiere ver fotos. Si las imágenes no llegan rápido, cambia de anuncio.
+              </p>
+              <p class="text-slate-400">
+                Al introducir la referencia, el bot muestra de inmediato una galería de imágenes y un resumen visual
+                fácil de entender desde el móvil.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-5">
+              <h3 class="font-semibold text-lg mb-1">Ahmed · 38 años · Comunicación sencilla</h3>
+              <p class="text-slate-300 mb-2">
+                No quiere tecnicismos. Busca mensajes claros: cuánto cuesta, dónde está y si está disponible.
+              </p>
+              <p class="text-slate-400">
+                El bot le responde con un texto corto y directo, con enlaces simples a mapa y fotos, sin necesidad de
+                llamar ni insistir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: FAQ / Próximos pasos -->
+      <section class="bg-slate-900 py-16 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-2">Preguntas frecuentes del prototipo</h2>
+            <p class="text-slate-300 text-sm sm:text-base">
+              Esta versión está pensada para validar la idea con usuarios reales antes de integrarla en sistemas más
+              complejos.
+            </p>
+          </div>
+
+          <div class="space-y-5 text-sm sm:text-base">
+            <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
+              <h3 class="font-semibold mb-1">¿Necesito conectar ya mi ERP o CRM?</h3>
+              <p class="text-slate-300">
+                No. En el prototipo más simple, los datos pueden guardarse en un archivo independiente (por ejemplo,
+                un CSV o JSON) con una selección de inmuebles de prueba.
+              </p>
+            </div>
+            <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
+              <h3 class="font-semibold mb-1">¿Se puede usar solo como landing de demo?</h3>
+              <p class="text-slate-300">
+                Sí. La landing publicada en GitHub Pages sirve como demostración visual del concepto y como base para
+                mostrar el flujo de información en presentaciones o en un vídeo explicativo.
+              </p>
+            </div>
+            <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
+              <h3 class="font-semibold mb-1">¿Qué se valida exactamente con este prototipo?</h3>
+              <p class="text-slate-300">
+                Principalmente, si los usuarios valoran recibir información instantánea por referencia y si esto reduce
+                la carga de trabajo del agente en consultas repetitivas.
+              </p>
+            </div>
+            <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
+              <h3 class="font-semibold mb-1">¿Se puede extender a WhatsApp u otros canales?</h3>
+              <p class="text-slate-300">
+                Sí. Una vez validada la idea, el mismo flujo se puede adaptar a un bot de WhatsApp o integrarse en la
+                web principal de la inmobiliaria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+        <p>© <span id="year"></span> IKOS Smart Property Bot. Prototipo de innovación con IA – Método AI-THINK.</p>
+        <p>Contacto: <a href="mailto:info@midominio.es" class="text-sky-300 hover:underline">info@midominio.es</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
